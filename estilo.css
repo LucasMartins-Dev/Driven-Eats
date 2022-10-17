@@ -69,7 +69,7 @@ body {
   margin-top: 17px;
   margin-bottom: 27px;
   display: flex;
-  overflow:auto;
+  overflow-x:scroll;
   display: flex;
 }
 

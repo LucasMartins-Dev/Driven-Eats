@@ -94,24 +94,24 @@ function selecionar_sobremesa(botao2) {
   }
 }
 function habilitar() {
-  var lampada = document.querySelector(".revisar-pedido");
-  var lampada1 = document.querySelector(".pedido-revisado");
+  var confirmar = document.querySelector(".revisar-pedido");
+  var confirmar1 = document.querySelector(".pedido-revisado");
 
   var valor = document.querySelector(".total-valor");
   total = p + b + s;
   total = total.toFixed(2);
   valor.innerHTML = "R$ " + total;
 
-  lampada.classList.add("final");
-  lampada1.classList.add("final");
+  confirmar.classList.add("final");
+  confirmar1.classList.add("final");
 }
 
 function desabilitar() {
-  var lampada = document.querySelector(".revisar-pedido");
-  var lampada1 = document.querySelector(".pedido-revisado");
+  var cancelar = document.querySelector(".revisar-pedido");
+  var cancelar1 = document.querySelector(".pedido-revisado");
 
-  lampada.classList.remove("final");
-  lampada1.classList.remove("final");
+  cancelar.classList.remove("final");
+  cancelar1.classList.remove("final");
 }
 function pedir() {
   let comid = document.querySelector(".comida-nome");
@@ -140,9 +140,9 @@ function pedir() {
     end;
   window.open("https://wa.me/5524998134569?text=" + encodeURIComponent(msg));
 
-  var lampada = document.querySelector(".revisar-pedido");
-  var lampada1 = document.querySelector(".pedido-revisado");
+  var cancelar = document.querySelector(".revisar-pedido");
+  var cancelar1 = document.querySelector(".pedido-revisado");
 
-  lampada.classList.remove("final");
-  lampada1.classList.remove("final");
+  cancelar.classList.remove("final");
+  cancelar1.classList.remove("final");
 }
