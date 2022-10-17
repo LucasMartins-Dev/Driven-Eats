@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="pedido-revisado">
+      <div class="titulo-bonus">Confirme seu pedido</div>
+      <div class="finalizar-comida">
+        <div class="comida-nome">flango flito</div>
+        <div class="comida-valor">10,00</div>
+      </div>
+      <div class="finalizar-bebida">
+        <div class="bebida-nome">gualana</div>
+        <div class="bebida-valor">5,00</div>
+      </div>
+      <div class="finalizar-sobremesa">
+        <div class="sobremesa-nome">tolta alema</div>
+        <div class="sobremesa-valor">7,00</div>
+      </div>
+      <div class="finalizar-total">
+        <div>Total</div>
+        <div class="total-valor">22,00</div>
+      </div>
+      <div class="finalizar-botao" onclick="pedir()">
+        Tudo certo, pode pedir!
+      </div>
+      <div class="cancelar-botao" onclick="desabilitar()">Cancelar</div>
+    </div>
+    <div class="revisar-pedido"></div>
+    <div class="menu-superior">
+      <h1>DrivenEats</h1>
+      <h2>Sua comida em 6 minutos</h2>
+    </div>
+    <div class="conteudo">
+      <div class="comida">
+        <div class="titulo">Primeiro, seu prato</div>
+        <div class="opções">
+          <div class="opção-01" onclick="selecionar_prato(this)">
+            <img class="image" src="imagens/feijoada.jpg" />
+            <h1>Feijoada Completa</h1>
+            <h2>Um pouco de feijão, um pouco de carnes</h2>
+            <h3>R$ 19,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-02" onclick="selecionar_prato(this)">
+            <img class="image" src="imagens/strogo.jpg" />
+            <h1>Strogonoff Frango</h1>
+            <h2>Um pouco de frango e batata palha</h2>
+            <h3>R$ 14,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-03" onclick="selecionar_prato(this)">
+            <img class="image" src="imagens/macarronada.jpg" />
+            <h1>Macarronada</h1>
+            <h2>Um pouco de macarrão e carne</h2>
+            <h3>R$ 15,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-04" onclick="selecionar_prato(this)">
+            <img class="image" src="imagens/nhoque.jpg" />
+            <h1>Nhoque ao molho</h1>
+            <h2>Um pouco de massa, um pouco de molho</h2>
+            <h3>R$ 13,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-05" onclick="selecionar_prato(this)">
+            <img class="image" src="imagens/frango_yin_yang 1.svg" />
+            <h1>Frango Yin Yang</h1>
+            <h2>Um pouco de batata, um pouco de salada</h2>
+            <h3>R$ 16,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="bebida">
+        <div class="titulo">Agora, sua bebida</div>
+        <div class="opções">
+          <div class="opção-01" onclick="selecionar_bebida(this)">
+            <img class="image" src="imagens/coquinha_gelada 1.svg" />
+            <h1>Coca-Cola</h1>
+            <h2>Lata 350ml</h2>
+            <h3>R$ 5,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-02" onclick="selecionar_bebida(this)">
+            <img class="image" src="imagens/guarana.jpg" />
+            <h1>Guaraná Antartica</h1>
+            <h2>Lata 350ml</h2>
+            <h3>R$ 5,00</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-03" onclick="selecionar_bebida(this)">
+            <img class="image" src="imagens/pepsi.jpg" />
+            <h1>Pepsi</h1>
+            <h2>Lata 350ml</h2>
+            <h3>R$ 5,50</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-04" onclick="selecionar_bebida(this)">
+            <img class="image" src="imagens/redbull.jpg" />
+            <h1>Red Bull</h1>
+            <h2>Lata 350ml</h2>
+            <h3>R$ 9,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-05" onclick="selecionar_bebida(this)">
+            <img class="image" src="imagens/sprite.jpg" />
+            <h1>Sprite</h1>
+            <h2>Lata 350ml</h2>
+            <h3>R$ 4,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="sobremesa">
+        <div class="titulo">Por fim, sua sobremesa</div>
+        <div class="opções">
+          <div class="opção-01" onclick="selecionar_sobremesa(this)">
+            <img class="image" src="imagens/bolo.jpg" />
+            <h1>Bolo de Pote</h1>
+            <h2>Um delicioso Bolo de Pote</h2>
+            <h3>R$ 8,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-02" onclick="selecionar_sobremesa(this)">
+            <img class="image" src="imagens/acai.jpg" />
+            <h1>Açai 500ml</h1>
+            <h2>Com leite em pó e paçoca</h2>
+            <h3>R$ 9,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-03" onclick="selecionar_sobremesa(this)">
+            <img class="image" src="imagens/Brigadeiro.jpg" />
+            <h1>Brigadeiro</h1>
+            <h2>Brigadeiro caseiro bem saboroso</h2>
+            <h3>R$ 2,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-04" onclick="selecionar_sobremesa(this)">
+            <img class="image" src="imagens/brownie.jpg" />
+            <h1>Brownie recheado</h1>
+            <h2>Ninho com nutela ou brigadeiro</h2>
+            <h3>R$ 5,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+          <div class="opção-05" onclick="selecionar_sobremesa(this)">
+            <img class="image" src="imagens/pudim 1.svg" />
+            <h1>Pudim</h1>
+            <h2>Apenas pudim de leite saboroso</h2>
+            <h3>R$ 7,90</h3>
+            <ion-icon name="checkmark-circle" class="check"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-inferior">
+      <div class="conteudo-menu-inferior cinza" onclick="habilitar()">
+        Selecione os 3 itens para fechar o pedido
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
