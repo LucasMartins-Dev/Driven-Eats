@@ -6,10 +6,8 @@ let p;
 let b;
 let s;
 
-
 function selecionar_prato(botao) {
   var pratoant = document.querySelector(".selecionadoc");
-
   prato = 1;
   if (pratoant !== null) {
     pratoant.classList.remove("selecionadoc");
@@ -37,6 +35,7 @@ function selecionar_prato(botao) {
     cor.innerHTML = "Finalizar Pedido";
   }
 }
+
 function selecionar_bebida(botao1) {
   var bebidaant = document.querySelector(".selecionadob");
   bebida = 1;
@@ -65,6 +64,7 @@ function selecionar_bebida(botao1) {
     cor.innerHTML = "Finalizar Pedido";
   }
 }
+
 function selecionar_sobremesa(botao2) {
   var sobremesaant = document.querySelector(".selecionados");
   sobremesa = 1;
@@ -93,6 +93,7 @@ function selecionar_sobremesa(botao2) {
     cor.innerHTML = "Finalizar Pedido";
   }
 }
+
 function habilitar() {
   var confirmar = document.querySelector(".revisar-pedido");
   var confirmar1 = document.querySelector(".pedido-revisado");
@@ -113,6 +114,7 @@ function desabilitar() {
   cancelar.classList.remove("final");
   cancelar1.classList.remove("final");
 }
+
 function pedir() {
   let comid = document.querySelector(".comida-nome");
   comid = comid.innerHTML;
