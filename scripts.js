@@ -5,10 +5,10 @@ let total;
 let p;
 let b;
 let s;
-let pratoant;
+
 
 function selecionar_prato(botao) {
-  pratoant = document.querySelector(".selecionadoc");
+  var pratoant = document.querySelector(".selecionadoc");
 
   prato = 1;
   if (pratoant !== null) {
